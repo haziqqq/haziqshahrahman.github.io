@@ -9,15 +9,15 @@ import SkillsServices from './components/SkillsServices';
 import Projects from './components/Projects';
 
 function App() {
-  const [counter, setCounter] = useState(0)
-  const incrementer = () => {
-    setCounter(counter + 1)
-  }
+  // const [counter, setCounter] = useState(0)
+  // const incrementer = () => {
+  //   setCounter(counter + 1)
+  // }
 
-  const [toggle, setToggle] = useState(false)
-  const elementToggle = () => {
-    setToggle((prev) => !prev)
-  }
+  // const [toggle, setToggle] = useState(false)
+  // const elementToggle = () => {
+  //   setToggle((prev) => !prev)
+  // }
 
   const name = "Haziq Shahrahman"
   const benefits = ['Tahan panas', 'Tahan badai', 'Tahan api']
@@ -26,16 +26,16 @@ function App() {
   )
   return (
     <main className="App font-body">
-      <h1 className={toggle ? "text-7xl" : "text-5xl"}>Hello World</h1>
+      {/* <h1 className={toggle ? "text-7xl" : "text-5xl"}>Hello World</h1>
       <h1>Clicked {counter} times</h1>
       <button onClick={incrementer}>Click here</button>
       <br></br>
-      <button onClick={elementToggle}>Toggle Here</button>
-      {/* <Navbar />
+      <button onClick={elementToggle}>Toggle Here</button> */}
+      <Navbar />
       <Header name={name} />
       <About />
       <SkillsServices />
-      <Projects /> */}
+      <Projects />
       {/* <div className="py-32">
         <p>Rp 3.000.000</p>
         <CheckDiscount isDiscount="y" />
