@@ -1,13 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@layer base {
+  .paragraph__header {
+    @apply hidden xl:block;
+  }
+}
+
+@layer components {
+  /* Navbar */
+  ._navbar {
+    @apply bg-white border-gray-200 px-4 py-7 z-50 transition-all duration-300 ease-in-out;
+  }
+  /* End */
+
+  /* Buttons */
+  .btn-primary__small {
+    @apply bg-primary text-white text-paragraphSmall px-10 py-2 rounded-lg hover:bg-primaryDark hover:scale-105 transition-all duration-300 ease-out;
+  }
+
+  .btn-primary__large {
+    @apply text-paragraph px-12 py-2.5;
+  }
+
+  .btn-outline-light__small {
+    @apply bg-transparent text-white text-paragraphSmall border-2 border-light px-10 py-2 rounded-lg hover:bg-light hover:text-primaryDark hover:scale-105 transition-all duration-300 ease-out;
+  }
+
+  .btn-outline-light__large {
+    @apply text-paragraph px-12 py-2.5;
+  }
+  /* End Buttons */
+}
+
+@layer utilities {
+  ._container {
+    @apply mx-auto px-4 lg:container;
+  }
+
+  ._line-primary {
+    @apply w-10 lg:w-20 mt-2 mx-auto bg-primaryDark h-1 border-none rounded-xl;
+  }
+
+  ._line-secondary {
+    @apply w-10 lg:w-20 mt-2 mx-auto bg-secondary h-1 border-none rounded-xl;
+  }
+
+  ._img-card-gradient::before {
+    @apply block absolute top-0 left-0 bottom-0 right-0 rounded-xl;
+    content: "";
+    background: linear-gradient(
+      0deg,
+      #483434 0%,
+      rgba(152, 138, 138, 0.498572) 99.95%,
+      rgba(196, 196, 196, 0) 100%,
+      #ecc5a8 100%
+    );
+  }
+
+  ._card:hover ._card-footer {
+    @apply transition-all duration-300 translate-y-0 opacity-100;
+  }
 }
