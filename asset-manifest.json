@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/haziqshahrahman.github.io/static/css/main.e4450ca1.css",
-    "main.js": "/haziqshahrahman.github.io/static/js/main.07e669b1.js",
+    "main.js": "/haziqshahrahman.github.io/static/js/main.89bac988.js",
     "static/js/787.a2cb61a6.chunk.js": "/haziqshahrahman.github.io/static/js/787.a2cb61a6.chunk.js",
     "static/media/profile.png": "/haziqshahrahman.github.io/static/media/profile.4fcaa666a845df0ea958.png",
     "static/media/project1.png": "/haziqshahrahman.github.io/static/media/project1.fa3d5d9881d1caa1917b.png",
@@ -12,11 +12,11 @@
     "static/media/skill4.png": "/haziqshahrahman.github.io/static/media/skill4.646b363ac5369b9d1c88.png",
     "index.html": "/haziqshahrahman.github.io/index.html",
     "main.e4450ca1.css.map": "/haziqshahrahman.github.io/static/css/main.e4450ca1.css.map",
-    "main.07e669b1.js.map": "/haziqshahrahman.github.io/static/js/main.07e669b1.js.map",
+    "main.89bac988.js.map": "/haziqshahrahman.github.io/static/js/main.89bac988.js.map",
     "787.a2cb61a6.chunk.js.map": "/haziqshahrahman.github.io/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4450ca1.css",
-    "static/js/main.07e669b1.js"
+    "static/js/main.89bac988.js"
   ]
 }
